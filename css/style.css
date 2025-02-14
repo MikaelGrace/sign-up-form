@@ -4,6 +4,12 @@
     }
 } */
 
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('../Norse-Bold') format('otf');
+  }
+  
+
 
 
 body {
@@ -15,10 +21,45 @@ body {
     align-items: center;
 }
 
-img {
+.image {
+    font-family: 'Norse-Bold', sans-serif;
+    position: relative;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.odin-logo {
+    position: fixed;
+    height: 200px;
+    width: 450px;
+    min-width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 200px;
+}
+
+.odin-logo img {
+    width: 200px;
+    min-width: none;
+    height: 200px;
+}
+
+.leaf-image {
     width: 450px;
     min-width: 300px;
     height: 100vh;
+}
+
+.image-credit {
+    position: fixed;
+    bottom: 50px;
+    width: 450px;
+    min-width: 300px;
+    
+}
+
+a {
+    color: white;
 }
 
 .form-container {
