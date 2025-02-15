@@ -75,7 +75,7 @@ a {
     text-align: left;
     padding: 30px;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: auto;
 }
 
 
@@ -87,6 +87,8 @@ form {
     background-color: white;
     padding: 30px;
     box-shadow: 0px 3px 5px 0px #d3d3d3;
+    height: 30vh;
+    overflow: auto;
 }
 
 @media (max-width: 1000px) {
@@ -96,11 +98,20 @@ form {
 }
 
 input {
-    border: 1px solid lightgray;
+    border: 1px solid #E5E7EB;
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
 }
+
+input:focus {
+    border: 1px solid #0000ff;
+}
+
+.password:invalid {
+    border: 1px solid #ff0000;
+}
+
 label {
     display: block;
 }
@@ -108,10 +119,12 @@ label {
 .login-create-account {
     text-align: left;
     padding-left: 30px;
+    height: 30vh;
 }
 
 .btn-create-account {
-    background-color: #568203;
+    /* background-color: #568203; */
+    background-color: #596D48;
     margin-top: 50px;
     color: white;
     padding: 10px;
@@ -121,9 +134,11 @@ label {
 }
 
 .login {
-    color: #568203;
+    /* color: #568203; */
+    color: #596D48;
     font-weight: 800;
     font-size: 14px;
+    text-decoration: none;
 }
 
 
